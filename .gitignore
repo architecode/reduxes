@@ -1,0 +1,9 @@
+# Folders
+/.nyc_output
+/node_modules
+/lib
+/typings
+
+/test
+
+# Files

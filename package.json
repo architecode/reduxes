@@ -1,6 +1,6 @@
 {
   "name": "reduxes",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Architecode Redux Util",
   "main": "./lib/index.js",
   "typings": "./typings/index.d.ts",

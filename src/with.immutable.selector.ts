@@ -6,10 +6,10 @@ export const createImmutableSelector: SelectorUtil.CreateSelector = (...keys: st
     keys: (...xKeys) => ([..._keys, ...xKeys]),
     select: (key) => createImmutableSelector(..._keys, key),
     get: (state) => state.getIn(_keys),
-    set: (state, key, value) => Array.isArray(key) ? state.setIn([..._keys, ...key], value) :
-      typeof key === "string" ? state.setIn([..._keys, key], value) : state.setIn([...keys], value),
-    push: (state, key, value) => Array.isArray(key) ? state.updateIn([..._keys, ...key], (list: any) => list.push(value)) :
-      typeof key === "string" ? state.updateIn([..._keys, key], (list: any) => list.push(value)) : state.updateIn([..._keys], (list: any) => list.push(value)),
+    set: (state, value) => state.setIn([...keys], value),
+    setIn: (state, key, value) => Array.isArray(key) ? state.setIn([..._keys, ...key], value) : state.setIn([..._keys, key], value),
+    push: (state, value) => state.updateIn([..._keys], (list: any) => list.push(value)),
+    pushIn: (state, key, value) => Array.isArray(key) ? state.updateIn([..._keys, ...key], (list: any) => list.push(value)) : state.updateIn([..._keys, key], (list: any) => list.push(value)),
   } as Selector<any>;
 })(keys);
 

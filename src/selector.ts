@@ -4,6 +4,6 @@ export interface Selector<S> {
   keys: (...keys: string[]) => string[];
   select: (key: string) => Selector<any>;
   get: (state: S) => any;
-  set: (state: S, key: string | string[], value: any) => S;
-  push: (state: S, key: string | string[], value: any) => S;
+  set: (state: S, key: string | string[] | undefined, value: any) => S;
+  push: (state: S, key: string | string[] | undefined, value: any) => S;
 }

@@ -4,6 +4,5 @@
 /lib
 /typings
 
-/test
-
 # Files
+.DS_Store

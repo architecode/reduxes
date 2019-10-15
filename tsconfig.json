@@ -3,8 +3,8 @@
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "lib",
-    "target": "esnext",
     "module": "commonjs",
+    "target": "esnext",
     "declaration": true,
     "declarationDir": "typings",
     "forceConsistentCasingInFileNames": true,
@@ -28,6 +28,7 @@
   ],
   "exclude": [
     "node_modules",
-    "lib"
+    "lib",
+    "test"
   ]
 }

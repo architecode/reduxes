@@ -1,6 +1,6 @@
 {
   "name": "reduxes",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Architecode Redux Util",
   "main": "./lib/index.js",
   "typings": "./typings/index.d.ts",
@@ -31,17 +31,6 @@
   "repository": "git+https://github.com/architecode/reduxes",
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/mocha": "^5.2.3",
-    "@types/node": "^10.3.4",
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
-    "mocha": "^5.2.0",
-    "mock-require": "^3.0.2",
-    "nyc": "^12.0.2",
-    "shelljs": "^0.8.2",
-    "sinon": "^6.0.0",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "archdevts": "^19.9.22"
   }
 }

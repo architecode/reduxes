@@ -31,6 +31,6 @@
   "repository": "git+https://github.com/architecode/reduxes",
   "dependencies": {},
   "devDependencies": {
-    "archdevts": "^19.9.22"
+    "archdevts": "^22.4.1"
   }
 }
